@@ -1,12 +1,12 @@
 import express from 'express';
-import { ServiceRoute } from '../modules/service/service.route';
+import { TodoRoute } from '../modules/service/todo.route';
 
 const router = express.Router();
 
 const moduleRoutes = [
   {
-    path: '/services',
-    route: ServiceRoute,
+    path: '/todos',
+    route: TodoRoute,
   },
 ];
 

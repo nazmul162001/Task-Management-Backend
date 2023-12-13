@@ -11,19 +11,10 @@ datasource db {
 }
 
 
-model Service {
+model Todo {
   id   String  @id @default(uuid())
-  name String   
-  price Int
-  category String
-  images String
-  district String
-  location String
-  description String
-  channel String
-  hdChannel String
-  connectionCost Int
-  status String
+  name String
+  status String @default("all")
 
-  @@map("services")
+  @@map("todos")
 }
