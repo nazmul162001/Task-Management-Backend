@@ -14,7 +14,7 @@ datasource db {
 model Todo {
   id   String  @id @default(uuid())
   name String
-  status String @default("all")
+  status String @default("active")
 
   @@map("todos")
 }
